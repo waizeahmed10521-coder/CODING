@@ -1,0 +1,6 @@
+Do it after editing or makin anything in this folder by opening Git Bash
+
+git autopush
+
+This is the code
+ 
