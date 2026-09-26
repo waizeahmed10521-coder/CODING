@@ -1,0 +1,36 @@
+*{
+    margin: 0%
+}
+
+.container{
+    .container 
+    background-color: ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    background-color: blanchedalmond;
+}
+
+.listenBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    background: #f5f5f5;
+    padding: 2%;
+    width: 100px;
+    height: 70px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.listenBtn:hover {
+    background: orange;
+    color: white;
+    transform: translateY(-5px);
+}

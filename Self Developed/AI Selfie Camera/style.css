@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #050816, #0b1026, #111936);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    min-height: 600px;
+    padding: 30px;
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(0, 255, 255, 0.25);
+
+    box-shadow:
+        0 0 30px rgba(0, 255, 255, 0.15),
+        inset 0 0 30px rgba(255, 255, 255, 0.02);
+
+    backdrop-filter: blur(15px);
+}
+
+/* Title */
+
+.containerTittle {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.tittle {
+    font-size: 42px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 10px #00ffff,
+        0 0 25px rgba(0, 255, 255, 0.6);
+}
+
+/* Camera Area */
+
+.containerCanvas {
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 20px;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    border: 2px dashed rgba(0, 255, 255, 0.35);
+
+    box-shadow:
+        inset 0 0 25px rgba(0, 255, 255, 0.08);
+
+    overflow: hidden;
+}
+
+/* Buttons */
+
+.containerBtn {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.containerBtn button {
+    padding: 13px 25px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(135deg, #00d9ff, #0066ff);
+
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 15px rgba(0, 217, 255, 0.35);
+
+    transition: 0.25s ease;
+}
+
+.containerBtn button:hover {
+    transform: translateY(-3px) scale(1.03);
+
+    box-shadow:
+        0 0 25px rgba(0, 217, 255, 0.7);
+}
+
+.containerBtn button:active {
+    transform: scale(0.96);
+}
+
+/* Image */
+
+.imageTag {
+    display: block;
+
+    width: 350px;
+    max-width: 100%;
+
+    margin: 25px auto 0;
+
+    border-radius: 15px;
+
+    border: 2px solid rgba(0, 255, 255, 0.4);
+
+    box-shadow:
+        0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .tittle {
+        font-size: 28px;
+    }
+
+    .containerCanvas {
+        height: 300px;
+    }
+
+    .containerBtn {
+        flex-direction: column;
+    }
+
+    .containerBtn button {
+        width: 100%;
+    }
+}

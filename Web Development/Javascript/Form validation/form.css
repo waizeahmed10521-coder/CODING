@@ -1,0 +1,21 @@
+
+
+.form {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+
+input {
+    height: 40px;
+}
+
+.signupBtn {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}

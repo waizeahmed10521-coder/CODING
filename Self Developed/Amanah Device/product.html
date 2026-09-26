@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Products | Amanah Device</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="product.css">
+```
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================== -->
+
+<header class="header">
+
+    <div class="logo">
+        <h1>Amanah Device</h1>
+        <p>Your Trusted Electronics Market</p>
+    </div>
+    <a href="index.html">Home</a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+
+        <button id="searchBtn">
+            🔍
+        </button>
+
+        <button id="cartBtn">
+            🛒
+            <span id="cartCount">0</span>
+        </button>
+
+        <button id="loginBtn">
+            Login
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =========================
+     PRODUCTS HERO
+========================== -->
+
+<section class="products-hero">
+
+    <div class="products-hero-content">
+
+        <p class="small-title">
+            AMANAH DEVICE STORE
+        </p>
+
+        <h2>
+            Explore Our
+            <span>Products</span>
+        </h2>
+
+        <p>
+            Discover smartphones, laptops, gaming devices,
+            headphones and other modern electronics.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PRODUCTS SECTION
+========================== -->
+
+<main class="products-page">
+
+    <!-- Search -->
+
+    <div class="product-search">
+
+        <input
+            type="text"
+            id="productSearch"
+            placeholder="Search for a device..."
+        >
+
+        <button id="productSearchBtn">
+            Search
+        </button>
+
+    </div>
+
+
+    <!-- Categories -->
+
+    <div class="product-filters">
+
+        <button class="filter-btn active" data-category="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-category="smartphone">
+            📱 Smartphones
+        </button>
+
+        <button class="filter-btn" data-category="laptop">
+            💻 Laptops
+        </button>
+
+        <button class="filter-btn" data-category="headphone">
+            🎧 Headphones
+        </button>
+
+        <button class="filter-btn" data-category="gaming">
+            🎮 Gaming
+        </button>
+
+        <button class="filter-btn" data-category="accessory">
+            🔌 Accessories
+        </button>
+
+    </div>
+
+
+    <!-- Product Count -->
+
+    <div class="products-heading">
+
+        <div>
+            <h2>All Products</h2>
+            <p>Find the right device for you.</p>
+        </div>
+
+        <span id="productCount">
+            8 Products
+        </span>
+
+    </div>
+
+
+    <!-- =========================
+         PRODUCT GRID
+    ========================== -->
+
+    <div class="products-grid" id="productsGrid">
+
+
+        <!-- Product 1 -->
+
+        <div class="shop-product-card"
+             data-category="smartphone"
+             data-name="Amanah X Pro">
+
+            <div class="shop-product-image">
+                <span>📱</span>
+
+                <div class="product-badge">
+                    New
+                </div>
+            </div>
+
+            <div class="shop-product-info">
+
+                <p class="product-category">
+                    Smartphone
+                </p>
+
+                <h3>
+                    Amanah X Pro
+                </h3>
+
+                <p class="product-description">
+                    Powerful smartphone with premium display.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>(124)</span>
+                </div>
+
+                <div class="shop-product-bottom">
+
+                    <strong>
+                        ৳32,000
+                    </strong>
+
+                    <button class="shop-add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 2 -->
+
+        <div class="shop-product-card"
+             data-category="smartphone"
+             data-name="Amanah Note 12">
+
+            <div class="shop-product-image">
+                <span>📱</span>
+            </div>
+
+            <div class="shop-product-info">
+
+                <p class="product-category">
+                    Smartphone
+                </p>
+
+                <h3>
+                    Amanah Note 12
+                </h3>
+
+                <p class="product-description">
+                    Stylish smartphone with long battery life.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
+                    <span>(89)</span>
+                </div>
+
+                <div class="shop-product-bottom">
+
+                    <strong>
+                        ৳21,500
+                    </strong>
+
+                    <button class="shop-add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 3 -->
+
+        <div class="shop-product-card"
+             data-category="laptop"
+             data-name="Amanah ProBook">
+
+            <div class="shop-product-image">
+                <span>💻</span>
+
+                <div class="product-badge">
+                    Popular
+                </div>
+            </div>
+
+            <div class="shop-product-info">
+
+                <p class="product-category">
+                    Laptop
+                </p>
+
+                <h3>
+                    Amanah ProBook
+                </h3>
+
+                <p class="product-description">
+                    Powerful laptop for work and study.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>(210)</span>
+                </div>
+
+                <div class="shop-product-bottom">
+
+                    <strong>
+                        ৳68,000
+                    </strong>
+
+                    <button class="shop-add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 4 -->
+
+        <div class="shop-product-card"
+             data-category="laptop"
+             data-name="Amanah Gaming Laptop">
+
+            <div class="shop-product-image">
+                <span>💻</span>
+
+                <div class="product-badge">
+                    Gaming
+                </div>
+            </div>
+
+            <div class="shop-product-info">
+
+                <p class="product-category">
+                    Laptop
+                </p>
+
+                <h3>
+                    Amanah Gaming Laptop
+                </h3>
+
+                <p class="product-description">
+                    High-performance laptop for gaming.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>(156)</span>
+                </div>
+
+                <div class="shop-product-bottom">
+
+                    <strong>
+                        ৳92,000
+                    </strong>
+
+                    <button class="shop-add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 5 -->
+
+        <div class="shop-product-card"
+             data-category="headphone"
+             data-name="Amanah AirSound">
+
+            <div class="shop-product-image">
+                <span>🎧</span>
+            </div>
+
+            <div class="shop-product-info">
+
+                <p class="product-category">
+                    Headphone
+                </p>
+
+                <h3>
+                    Amanah AirSound
+                </h3>
+
+                <p class="product-description">
+                    Wireless headphones with immersive sound.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
+                    <span>(73)</span>
+                </div>
+
+                <div class="shop-product-bottom">
+
+                    <strong>
+                        ৳4,500
+                    </strong>
+
+                    <button class="shop-add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 6 -->
+
+        <div class="shop-product-card"
+             data-category="gaming"
+             data-name="Amanah Gaming Mouse">
+
+            <div class="shop-product-image">
+                <span>🖱️</span>
+            </div>
+
+            <div class="shop-product-info">
+
+                <p class="product-category">
+                    Gaming
+                </p>
+
+                <h3>
+                    Amanah Gaming Mouse
+                </h3>
+
+                <p class="product-description">
+                    High precision gaming mouse.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>(198)</span>
+                </div>
+
+                <div class="shop-product-bottom">
+
+                    <strong>
+                        ৳2,200
+                    </strong>
+
+                    <button class="shop-add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 7 -->
+
+        <div class="shop-product-card"
+             data-category="gaming"
+             data-name="Amanah Mechanical Keyboard">
+
+            <div class="shop-product-image">
+                <span>⌨️</span>
+
+                <div class="product-badge">
+                    Best Seller
+                </div>
+            </div>
+
+            <div class="shop-product-info">
+
+                <p class="product-category">
+                    Gaming
+                </p>
+
+                <h3>
+                    Amanah Mechanical Keyboard
+                </h3>
+
+                <p class="product-description">
+                    Mechanical keyboard built for gamers.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐⭐
+                    <span>(245)</span>
+                </div>
+
+                <div class="shop-product-bottom">
+
+                    <strong>
+                        ৳3,200
+                    </strong>
+
+                    <button class="shop-add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Product 8 -->
+
+        <div class="shop-product-card"
+             data-category="accessory"
+             data-name="Amanah Fast Charger">
+
+            <div class="shop-product-image">
+                <span>🔌</span>
+            </div>
+
+            <div class="shop-product-info">
+
+                <p class="product-category">
+                    Accessory
+                </p>
+
+                <h3>
+                    Amanah Fast Charger
+                </h3>
+
+                <p class="product-description">
+                    Fast and reliable device charger.
+                </p>
+
+                <div class="rating">
+                    ⭐⭐⭐⭐☆
+                    <span>(91)</span>
+                </div>
+
+                <div class="shop-product-bottom">
+
+                    <strong>
+                        ৳1,500
+                    </strong>
+
+                    <button class="shop-add-cart">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- No Products Message -->
+
+    <div class="no-products" id="noProducts">
+
+        <h3>
+            No products found
+        </h3>
+
+        <p>
+            Try another search or category.
+        </p>
+
+    </div>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div>
+            <h2>Amanah Device</h2>
+            <p>
+                Your Trusted Electronics Market
+            </p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="products.html">
+                Products
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+
+            <p>
+                Email: support@amanahdevice.com
+            </p>
+
+            <p>
+                Phone: +880 1XXX-XXXXXX
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Amanah Device. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+<script src="js/products.js"></script>
+```
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.title {
+    font-family: fantasy;
+    font-size: 50px;
+}
+
+
+.cameraContainer {
+    width: 300px;
+    height: 280px;
+    background-color: lightgray;
+    margin-bottom: 20px;
+}
+
+.btnContainer  button {
+    background-color: black;
+    color: white;
+    font-family: fantasy;
+    font-size: 18px;
+    padding: 8px 20px;
+} 
+
+
+

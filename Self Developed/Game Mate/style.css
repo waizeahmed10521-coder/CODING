@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    color: white;
+
+    /* GAMING BACKGROUND */
+    background-image:
+        linear-gradient(
+            rgba(147, 150, 153, 0.78),
+            rgba(72, 73, 75, 0.88)
+        ),
+        url("bgpro.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   MAIN GAME MATE PANEL
+   ========================= */
+
+.container {
+    width: 660px;
+    min-height: 520px;
+
+    padding: 35px;
+
+    background: rgba(7, 12, 18, 0.91);
+
+    border: 1px solid rgba(0, 225, 255, 0.35);
+    border-radius: 18px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 0 35px rgba(0, 0, 0, 0.9),
+        0 0 80px rgba(0, 190, 255, 0.08);
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* TOP NEON LINE */
+
+.container::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #00eaff,
+        #ffffff,
+        #00eaff,
+        transparent
+    );
+
+    box-shadow:
+        0 0 10px #00eaff,
+        0 0 25px #00eaff;
+}
+
+
+/* =========================
+   TITLE
+   ========================= */
+
+.tittle {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tittle h1 {
+    font-size: 48px;
+    font-weight: 900;
+
+    letter-spacing: 7px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 0 5px #00eaff,
+        0 0 15px #00eaff,
+        0 0 35px rgba(0, 234, 255, 0.6);
+}
+
+
+/* SUBTITLE */
+
+.tittle2 {
+    text-align: center;
+
+    margin-top: 8px;
+}
+
+.tittle2 h3 {
+    color: #8ca0b3;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   TALK BUTTON
+   ========================= */
+
+.talkBtn {
+    width: 210px;
+
+    margin: 32px auto 25px;
+
+    padding: 14px 20px;
+
+    text-align: center;
+
+    background: rgba(0, 20, 30, 0.85);
+
+    color: #00eaff;
+
+    border: 1px solid #00eaff;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 8px rgba(0, 234, 255, 0.25);
+
+    transition: 0.3s;
+}
+
+
+/* BUTTON HOVER */
+
+.talkBtn:hover {
+
+    background: #00eaff;
+
+    color: #061018;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 10px #00eaff,
+        0 0 25px #00eaff,
+        0 0 50px rgba(0, 234, 255, 0.5);
+}
+
+
+/* =========================
+   CHAT AREA
+   ========================= */
+
+.messageContainer {
+
+    width: 100%;
+
+    min-height: 390px;
+
+    padding: 22px;
+
+    background:
+        linear-gradient(
+            rgba(4, 9, 14, 0.95),
+            rgba(4, 9, 14, 0.95)
+        );
+
+    border: 1px solid #1c3442;
+
+    border-radius: 12px;
+
+    position: relative;
+
+    box-shadow:
+        inset 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+
+/* CHAT HEADER */
+
+.messageContainer::before {
+
+    content: "GAME MATE  //  SYSTEM ONLINE";
+
+    position: absolute;
+
+    top: 10px;
+    left: 18px;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    color: #3d6577;
+}
+
+
+/* =========================
+   HUMAN MESSAGE
+   ========================= */
+
+.humanPara {
+
+    width: fit-content;
+
+    max-width: 75%;
+
+    margin-top: 25px;
+
+    margin-bottom: 18px;
+
+    padding: 13px 17px;
+
+    background: rgba(0, 45, 60, 0.55);
+
+    color: #00eaff;
+
+    border-left: 3px solid #00eaff;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 0 15px rgba(0, 234, 255, 0.08);
+}
+
+
+/* =========================
+   GAME MATE MESSAGE
+   ========================= */
+
+.gameMatePara {
+
+    width: fit-content;
+
+    max-width: 75%;
+
+    margin-left: auto;
+
+    padding: 13px 17px;
+
+    background: rgba(25, 31, 39, 0.75);
+
+    color: #dce6ed;
+
+    border-right: 3px solid #71808e;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 0 15px rgba(255, 255, 255, 0.03);
+}
+
+
+/* =========================
+   GAMING CORNER DETAILS
+   ========================= */
+
+.container::after {
+
+    content: "GM-01";
+
+    position: absolute;
+
+    bottom: 12px;
+    right: 18px;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #304654;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .container {
+        width: 92%;
+        min-height: 580px;
+        padding: 25px;
+    }
+
+    .tittle h1 {
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,160 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.navbarSection {
+    background-color: black;
+    height: 50px;
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.navLink {
+    color: red;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+
+
+
+.bannerSection {
+    /* background-color: gray; */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    padding: 0%  10%;
+
+    background-image: url("https://images.unsplash.com/photo-1615655406736-b37c4fabf923");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.bannerTitle {
+    color: red;
+    font-size: 40px;
+}
+
+.bannerDesc {
+    color: brown;
+}
+
+
+
+.exploreBtn {
+    background-color: red;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+.introSection {
+    margin: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.introTitle {
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.introDesc {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.line {
+    height: 2px;
+    background-color: red;
+    border: none;
+    width: 100px;
+    border-radius: 10px;
+}
+
+
+
+
+.product {
+    width: 25%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.product  img {
+    width: 100%;
+}
+
+
+.productSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+}
+
+
+.product h1 {
+    font-size: 25px;
+    font-family: fantasy;
+    color: red;
+}
+
+
+
+.footerSection {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: red;
+    gap: 15%;
+    align-items: center;
+}
+
+
+.footerImage {
+    width: 50%;
+}
+
+
+.footerList {
+    list-style: none;
+    font-family: fantasy;
+}
+
+
+.listTitle {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
